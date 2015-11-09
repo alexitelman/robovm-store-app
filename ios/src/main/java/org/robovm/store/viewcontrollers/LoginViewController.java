@@ -31,9 +31,10 @@ import org.robovm.store.views.PrefillRoboVMAccountInstructionsView;
 
 @SuppressWarnings("deprecation")
 public class LoginViewController extends UIViewController {
+    // TODO: Enter your RoboVM account email address here
     // If you do not have a RoboVM Account please sign up here:
     // https://account.robovm.com/#/register
-    private static final String ROBOVM_ACCOUNT_EMAIL = "ilanshiber@gmail.com";
+    private static final String ROBOVM_ACCOUNT_EMAIL = "";
 
     private UIView contentView;
     private LoginView loginView;
