@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.robovm.apple.audiotoolbox.AudioServices;
 import org.robovm.apple.coreanimation.CAAnimation;
 import org.robovm.apple.coreanimation.CAAnimationCalculationMode;
 import org.robovm.apple.coreanimation.CAAnimationDelegateAdapter;
@@ -120,6 +121,9 @@ public class ProductDetailViewController extends UITableViewController {
         if (addedToBasket != null) {
             addedToBasket.invoke(new Order(order));
         }
+
+        // Play a sound:
+        AudioServices.playSystemSound(1013); // = sms-received5.caf
     }
 
     private void animateView(UIView view, CGPoint targetPosition, Runnable completion) {
